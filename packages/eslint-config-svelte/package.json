@@ -1,0 +1,13 @@
+{
+  "name": "eslint-config-svelte",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "eslint-plugin-svelte": "^2.29.0",
+    "eslint-plugin-tailwindcss": "^3.12.1"
+  }
+}

@@ -27,13 +27,14 @@
         devenv.shells.default =
           let
             aliases = map
-              (alias: pkgs.writeShellScriptBin
+              (alias: pkgs.lib.hiPrio (pkgs.writeShellScriptBin
                 (builtins.elemAt alias 0)
-                ((builtins.elemAt alias 1) + " \"$@\"")) [
+                ((builtins.elemAt alias 1) + " \"$@\""))) [
               [ "npm" "pnpm" ]
               [ "npx" "pnpx" ]
               [ "yarn" "pnpm" ]
               [ "ui" "npx shadcn-svelte add"]
+              [ "t" "turbo" ]
             ];
           in
           {
@@ -48,7 +49,8 @@
                 svelte-language-server
                 prettier;
             }) ++ (builtins.attrValues {
-              inherit (pkgs);
+              inherit (pkgs) turbo;
+              nodejs-18_x = (pkgs.nodejs-18_x.override { enableNpm = false; });
             }) ++ aliases;
           };
 
