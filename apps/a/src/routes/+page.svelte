@@ -12,7 +12,7 @@
 </p>
 
 <p class="m-10 mt-0">
-	Because I, at least, <span class="gradient-text from-red-500 to-red-600">love</span> that which is <span
+	Because I, at least, <span class="gradient-text from-red-400 to-red-500">love</span> that which is <span
 		class="gradient-text from-green-500 to-green-400">beautiful</span
 	>
 </p>
