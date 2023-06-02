@@ -1,0 +1,59 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "test",
+          "check",
+          "check:watch",
+          "test:unit",
+          "lint",
+          "format",
+          "package",
+          "prepublishOnly"
+        ],
+        "accessToken": "YjY3NjNjMzgtNDRmNy00ZmU3LWJkMmEtNjk0MThmYTJhYmIxfHJlYWQtb25seQ=="
+      }
+    }
+  },
+  "targetDefaults": {
+    "dev": {
+      "dependsOn": ["^build"]
+    },
+    "build": {
+      "dependsOn": ["^build"]
+    },
+    "preview": {
+      "dependsOn": ["^build"]
+    },
+    "test": {
+      "dependsOn": ["build"]
+    },
+    "check": {
+      "dependsOn": ["build"]
+    },
+    "check:watch": {
+      "dependsOn": []
+    },
+    "test:unit": {
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "dependsOn": []
+    },
+    "format": {
+      "dependsOn": []
+    },
+    "package": {
+      "dependsOn": []
+    },
+    "prepublishOnly": {
+      "dependsOn": []
+    }
+  },
+  "affected": {
+    "defaultBase": "master"
+  }
+}

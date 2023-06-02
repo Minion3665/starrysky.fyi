@@ -27,8 +27,8 @@
         devenv.shells.default =
           let
             scripts = [
-              [ "ui" "pnpx shadcn-svelte add"]
-              [ "t" "turbo" ]
+              [ "ui" "pnpx shadcn-svelte add" ]
+              [ "nx" "pnpm nx" ]
             ];
           in
           {
@@ -43,7 +43,7 @@
                 svelte-language-server
                 prettier;
             }) ++ (builtins.attrValues {
-              inherit (pkgs) turbo;
+              inherit (pkgs);
               nodejs-18_x = (pkgs.nodejs-18_x.override { enableNpm = true; });
             });
 

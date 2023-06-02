@@ -2,13 +2,13 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/strict",
-    "turbo",
     "prettier",
+    "plugin:@nx/typescript"
   ],
   parserOptions: {
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "@nx/typescript"],
   rules: {
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
