@@ -26,14 +26,8 @@
 
         devenv.shells.default =
           let
-            aliases = map
-              (alias: pkgs.lib.hiPrio (pkgs.writeShellScriptBin
-                (builtins.elemAt alias 0)
-                ((builtins.elemAt alias 1) + " \"$@\""))) [
-              [ "npm" "pnpm" ]
-              [ "npx" "pnpx" ]
-              [ "yarn" "pnpm" ]
-              [ "ui" "npx shadcn-svelte add"]
+            scripts = [
+              [ "ui" "pnpx shadcn-svelte add"]
               [ "t" "turbo" ]
             ];
           in
@@ -50,8 +44,16 @@
                 prettier;
             }) ++ (builtins.attrValues {
               inherit (pkgs) turbo;
-              nodejs-18_x = (pkgs.nodejs-18_x.override { enableNpm = false; });
-            }) ++ aliases;
+              nodejs-18_x = (pkgs.nodejs-18_x.override { enableNpm = true; });
+            });
+
+            scripts = pkgs.lib.pipe scripts [
+              (map (alias: {
+                name = builtins.elemAt alias 0;
+                value.exec = (builtins.elemAt alias 1) + " \"$@\"";
+              }))
+              pkgs.lib.listToAttrs
+            ];
           };
 
       };
