@@ -1,6 +1,5 @@
 <script>
 	import Button from '$components/ui/button/Button.svelte';
-	import { BackgroundStars } from '$components/decoration/BackgroundStars';
 </script>
 
 <p class="pt-[40vh] p-10">
