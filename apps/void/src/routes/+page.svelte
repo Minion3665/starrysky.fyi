@@ -34,6 +34,16 @@
 	onMount(focusMessageInput);
 </script>
 
+<svelte:head>
+	<title>The void</title>
+	<meta name="description" content="Have worries or frustrations? Let them out into the void" />
+	<meta property="og:title" content="The void" />
+	<meta property="og:description" content="Have worries or frustrations? Let them out into the void" />
+	<meta property="og:type" content="website" />
+	<meta name="keywords" content="void, vent, stress" />
+	<meta name="theme-color" content="#030711" />
+</svelte:head>
+
 <form
 	on:submit|preventDefault={() => {
 		messages.push(currentlyTyped);
