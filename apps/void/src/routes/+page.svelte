@@ -40,8 +40,8 @@
 	<meta property="og:title" content="The void" />
 	<meta property="og:description" content="Have worries or frustrations? Let them out into the void" />
 	<meta property="og:type" content="website" />
-	<meta name="keywords" content="void, vent, stress" />
 	<meta name="theme-color" content="#030711" />
+	<meta name="keywords" content="void, vent, stress" />
 </svelte:head>
 
 <form
@@ -59,7 +59,7 @@
 	<div class="flex p-2 pt-0 flex-col justify-end w-full pastMessages">
 		{#each (messages.length === 0 ? [systemMessage] : ['']).concat(messages) as message, index (`${index} ${message}`)}
 			<p class:message="{index !== 0}" transition:fade={{ duration: 100 }} animate:flip={{ duration: 100 }}>
-				{message}
+				<span class="message">{message}</span>
 			</p>
 		{/each}
 		<input type="hidden" value={messages.join('\n')} name="pastMessages" />
@@ -109,7 +109,10 @@
 	}
 
 	p.message {
-		animation: message-fade-out 150s ease-in-out forwards;
 		overflow-wrap: break-word;
+	}
+
+	span.message {
+		animation: message-fade-out 150s ease-in-out forwards;
 	}
 </style>
