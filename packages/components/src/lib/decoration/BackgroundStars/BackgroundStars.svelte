@@ -3,7 +3,10 @@
 
 	let random = seedrandom('backgroundstars');
 
-	let parts: [number, number][] = Array(50)
+	export let starCount: number = 50;
+
+	let parts: [number, number][]
+	$: parts = Array(starCount)
 		.fill(0)
 		.map(() => {
 			return [random(), random()];
