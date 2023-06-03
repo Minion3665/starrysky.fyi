@@ -2,7 +2,7 @@
 
 ## Licensing
 
-- This project is largely licensed under AGPL3, which you can find a copy in
+- This project is largely licensed under AGPL3, which you can find a copy of in
   [the LICENSE file](./LICENSE)
 - Some directories contain their own LICENSE files, for example
   ./packages/components which is licensed under the EXPAT (or MIT) license. All
