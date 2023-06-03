@@ -56,7 +56,7 @@
 	method="post"
 	class="p-2 flex flex-col h-full gap-2 justify-end pt-0"
 >
-	<div class="flex p-2 pt-0 flex-col justify-end overflow-hidden pastMessages">
+	<div class="flex p-2 pt-0 flex-col justify-end w-full pastMessages">
 		{#each (messages.length === 0 ? [systemMessage] : ['']).concat(messages) as message, index (`${index} ${message}`)}
 			<p class:message="{index !== 0}" transition:fade={{ duration: 100 }} animate:flip={{ duration: 100 }}>
 				{message}
@@ -96,6 +96,7 @@
 		width: 100%;
 		height: 100%;
 		background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+		pointer-events: none;
 	}
 
 	@keyframes message-fade-out {
@@ -109,5 +110,6 @@
 
 	p.message {
 		animation: message-fade-out 150s ease-in-out forwards;
+		overflow-wrap: break-word;
 	}
 </style>
