@@ -52,7 +52,7 @@
 		focusMessageInput();
 	}}
 	method="post"
-	class="p-2 flex flex-col h-screen gap-2 justify-end pt-0"
+	class="p-2 flex flex-col h-full gap-2 justify-end pt-0"
 >
 	<div class="flex p-2 pt-0 flex-col justify-end overflow-hidden pastMessages">
 		{#each (messages.length === 0 ? [systemMessage] : ['']).concat(messages) as message, index (`${index} ${message}`)}
