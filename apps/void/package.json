@@ -35,6 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-netlify": "^2.0.7",
 		"class-variance-authority": "^0.6.0",
 		"clsx": "^1.2.1",
 		"components": "workspace:*",
