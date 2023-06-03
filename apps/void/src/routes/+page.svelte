@@ -77,7 +77,7 @@
 			on:click={() => {
 				currentlyTyped = '';
 				systemMessage = resetMessage;
-				messages = [systemMessage];
+				messages = [];
 			}}>Clean</Button
 		>
 	</div>
