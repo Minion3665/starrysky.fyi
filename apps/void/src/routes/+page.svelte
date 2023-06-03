@@ -46,9 +46,11 @@
 
 <form
 	on:submit|preventDefault={() => {
-		messages.push(currentlyTyped);
-		messages = messages;
-		currentlyTyped = '';
+		if (currentlyTyped) {
+			messages.push(currentlyTyped);
+			messages = messages;
+			currentlyTyped = '';
+		}
 		focusMessageInput();
 	}}
 	method="post"
@@ -78,6 +80,7 @@
 				currentlyTyped = '';
 				systemMessage = resetMessage;
 				messages = [];
+				focusMessageInput();
 			}}>Clean</Button
 		>
 	</div>
