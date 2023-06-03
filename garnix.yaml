@@ -1,0 +1,6 @@
+builds:
+  exclude:
+  - devShells.x86_64-linux.default
+  - packages.x86_64-linux.container-processes
+  - packages.x86_64-linux.container-shell
+  # All of these are devenv things, and devenv requires using impure flakes
