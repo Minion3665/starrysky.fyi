@@ -63,7 +63,7 @@
 		<input type="hidden" value={messages.join('\n')} name="pastMessages" />
 	</div>
 
-	<div class="flex w-full gap-2">
+	<div class="flex w-full gap-2 z-10">
 		<Input
 			bind:element={messageInput}
 			bind:value={currentlyTyped}
