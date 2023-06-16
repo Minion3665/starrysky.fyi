@@ -22,7 +22,7 @@
 
 <div class="flex flex-col items-center justify-center gap-2 m-10">
 	<Button href="/who" variant="outline">Who are you?</Button>
-	<Button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">What do you make?</Button>
+	<Button href="/what">What do you make?</Button>
 </div>
 
 <style lang="postcss">
