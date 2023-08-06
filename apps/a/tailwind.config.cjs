@@ -1,7 +1,10 @@
 const { fontFamily } = require('tailwindcss/defaultTheme');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/**/*.{html,js,svelte,ts}', '../../packages/components/dist/**/*.{html,js,svelte,ts}'],
+	content: [
+		'./src/**/*.{html,js,svelte,ts}',
+		'../../packages/components/dist/**/*.{html,js,svelte,ts}'
+	],
 	theme: {
 		container: {
 			center: true,

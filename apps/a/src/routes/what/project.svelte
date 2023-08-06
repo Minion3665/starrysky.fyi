@@ -1,4 +1,13 @@
 <script lang="ts">
+	import {
+		Card,
+		CardTitle,
+		CardHeader,
+		CardContent,
+		CardDescription,
+		CardFooter
+	} from '$components/ui/card';
+
 	export let name: string;
 
 	export let lost: boolean = false;
@@ -25,18 +34,17 @@
 	export let homepage: string | undefined = undefined;
 </script>
 
-<a
-	href={homepage}
-	class="flex flex-col w-64 grow rounded-md p-3 border border-2 hover:border-white transition-all"
-	class:border-emerald-600={theme === 'online'}
-	class:border-yellow-600={theme === 'archived'}
-	class:border-rose-600={theme === 'offline'}
-	class:border-gray-700={theme === 'lost'}
->
-	<p><span class="title">{name}</span> ({theme})</p>
-	<p><slot /></p>
+<a href={homepage} class="w-64 grow">
+	<Card class="grid h-full flex-col">
+		<CardHeader>
+			<CardTitle>{name}</CardTitle>
+		</CardHeader>
+		<CardContent>
+			<CardDescription><slot /></CardDescription>
+		</CardContent>
+		<CardFooter class="self-end">{theme}</CardFooter>
+	</Card>
 </a>
 
 <style lang="postcss">
-
 </style>

@@ -47,3 +47,41 @@
 		font-feature-settings: 'rlig' 1, 'calt' 1;
 	}
 }
+
+.gradient-text {
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	@apply bg-gradient-to-r font-bold;
+}
+
+p:not(.reset):not(:last-child) {
+	@apply pb-5;
+}
+
+a:not(.reset) {
+	@apply gradient-text text-cyan-300 from-cyan-200 to-cyan-300 underline decoration-cyan-300/30 transition-colors;
+}
+
+a:hover:not(.reset) {
+	@apply gradient-text text-cyan-500 from-cyan-400 to-cyan-500 decoration-cyan-500;
+}
+
+ul li:not(.reset)::before {
+	content: "- ";
+}
+
+.dim {
+	@apply text-gray-400;
+}
+
+a.dim:not(.reset) {
+	@apply gradient-text text-cyan-600 from-cyan-600 to-cyan-700;
+}
+
+a.dim:hover:not(.reset) {
+	@apply gradient-text text-cyan-400 from-cyan-300 to-cyan-400 underline decoration-cyan-400;
+}
+
+h2:not(.reset) {
+	@apply inline-block;
+}

@@ -1,44 +1,104 @@
 <script>
-	import Button from '$components/ui/button/Button.svelte';
+	import { Card, CardContent, CardHeader, CardTitle } from '$components/ui/card';
+	import Prompt from './prompt.svelte';
+	import Result from './result.svelte';
+
+	import { format } from 'date-fns';
+
+	let pageLoad = format(new Date(), 'E MMM d HH:mm:ss y');
 </script>
 
-<p class="pt-[40vh] p-10">
-	We hope that our services help you to make something as
-	<span class="gradient-text from-indigo-500 to-violet-400">beautiful</span> as the
-	<span class="gradient-text from-amber-400 to-amber-300">stars</span>
-	in the
-	<span class="gradient-text from-cyan-400 to-cyan-500">sky</span>
-</p>
+<svelte:head>
+	<title>A starry Sky</title>
+</svelte:head>
 
-<p class="m-10 mt-0">
-	Because I, at least, <span class="gradient-text from-red-400 to-red-500">love</span> that which is <span
-		class="gradient-text from-green-500 to-green-400">beautiful</span
-	>
-</p>
-
-<p class="m-10 pl-10">
-	- <span class="gradient-text from-pink-400 to-pink-300">A Starry Sky</span>
-</p>
-
-<div class="flex flex-col items-center justify-center gap-2 m-10">
-	<Button href="/who" variant="outline">Who are you?</Button>
-	<Button href="/what">What do you make?</Button>
+<div class="mx-auto rounded-md p-8 lg:w-[1024px]">
+	<Result>
+		<h1 class="dim pb-5">A starry Sky</h1>
+		<p class="dim">
+			Linux a.starrysky.fyi 6.1.31 #1-<a class="dim" href="https://nixos.org">NixOS</a>
+			<a class="dim" href="https://en.wikipedia.org/wiki/Symmetric_multiprocessing">SMP</a>
+			<a class="dim" href="https://wikipedia.org/wiki/Kernel_preemption">PREEMPT_DYNAMIC</a>
+			{pageLoad} x86_64 GNU/Linux<br/>
+			Type "help", "copyright", "credits" or "license" for more information.
+		</p>
+		<p class="dim">
+			Last login: {pageLoad} from 127.0.0.1
+		</p>
+	</Result>
+	<Prompt><h2>whoami</h2></Prompt>
+	<Result>
+		<p>
+			I'm Skyler, a transgender developer from the UK. It's nice to meet you! I love my Blåhaj,
+			writing and contributing to open source software, my Blåhaj and playing games with my
+			friends. Also my Blåhaj.
+		</p>
+		<p>
+			My pronouns are she/her.
+		</p>
+		<p>
+			In my spare time I <!--<a href="https://blog.starrysky.fyi">write posts for my blog</a>, -->write
+			small bits of open source software, maintain packages on
+			<a href="https://github.com/NixOS/nixpkgs">nixpkgs</a>, hack around on my NixOS system and
+			play videogames with (or sometimes without) my friends.
+		</p>
+		<p>
+			Professionally, I work at <a href="https://www.collabora.com/">Collabora Productivity</a>
+			making <a href="https://www.collaboraoffice.com/">LibreOffice work online</a>.
+		</p>
+		<p>
+			If you'd like to talk, I'd love to hear from you. Come find me on
+			<a href="https://matrix.to/#/@minion:coded.codes">Matrix</a>!
+		</p>
+	</Result>
+	<Prompt>unalias whoami</Prompt>
+	<Prompt>nix run github:Minion3665#links</Prompt>
+	<Result>
+		<!--<h2 class="pt-3 pb-2">Explore this website</h2>
+		<div class="mb-5 flex flex-wrap gap-5 md:flex-nowrap">
+			<a
+				class="reset transition-color block grow underline decoration-cyan-300/30 hover:decoration-cyan-400 md:basis-1/2"
+				href="https://blog.starrysky.fyi"
+			>
+				<Card
+					class="h-full shadow-white/50 transition-shadow hover:shadow-md hover:shadow-cyan-400"
+				>
+					<CardHeader>
+						<CardTitle>Read my blog</CardTitle>
+					</CardHeader>
+					<CardContent>
+						<p>I write posts focusing on tech, life and suchlike.</p>
+					</CardContent>
+				</Card>
+			</a>
+			<a
+				class="reset transition-color block grow underline decoration-cyan-300/30 hover:decoration-cyan-400 md:basis-1/2"
+				href="/projects"
+			>
+				<Card
+					class="h-full shadow-white/50 transition-shadow hover:shadow-md hover:shadow-cyan-400"
+				>
+					<CardHeader>
+						<CardTitle>See my projects</CardTitle>
+					</CardHeader>
+					<CardContent>
+						<p>
+							Tiny websites and apps to do specific tasks take your fancy? I sure hope so because
+							that's most of what I make.
+						</p>
+					</CardContent>
+				</Card>
+			</a>
+		</div>-->
+		<h2>Find me on other sites</h2>
+		<ul>
+			<li><a href="https://keyoxide.org/F27E3E5922772E7A">KeyOxide</a></li>
+			<li><a href="https://github.com/Minion3665">GitHub</a></li>
+			<li><a href="https://matrix.to/#/@minion:coded.codes">Matrix</a></li>
+			<li><a href="https://tech.lgbt/@minion3665">The Fediverse</a></li>
+			<li><a href="https://www.linkedin.com/in/minion3665/">LinkedIn</a></li>
+			<li><a href="mailto:skyler@clicks.codes">Good ol' email</a></li>
+		</ul>
+	</Result>
+	<Prompt><span class="animate-pulse">█</span></Prompt>
 </div>
-
-<style lang="postcss">
-	h1 {
-		font-size: 3rem;
-		font-family: Roboto;
-		font-weight: bold;
-	}
-
-	span.gradient-text {
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		@apply bg-gradient-to-r font-bold;
-	}
-
-	.title {
-		text-align: center;
-	}
-</style>
