@@ -52,7 +52,7 @@
 		</p>
 	</Result>
 	<Prompt>unalias whoami</Prompt>
-	<Prompt>nix run github:Minion3665#links</Prompt>
+	<Prompt>nix run github:Minion3665/links</Prompt>
 	<Result>
 		<!--<h2 class="pt-3 pb-2">Explore this website</h2>
 		<div class="mb-5 flex flex-wrap gap-5 md:flex-nowrap">
