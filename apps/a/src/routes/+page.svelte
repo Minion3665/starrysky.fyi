@@ -95,7 +95,7 @@
 			<li><a href="https://keyoxide.org/F27E3E5922772E7A">KeyOxide</a></li>
 			<li><a href="https://github.com/Minion3665">GitHub</a></li>
 			<li><a href="https://matrix.to/#/@minion:coded.codes">Matrix</a></li>
-			<li><a href="https://tech.lgbt/@minion3665">The Fediverse</a></li>
+			<li><a href="https://tech.lgbt/@minion3665" rel="me">The Fediverse</a></li>
 			<li><a href="https://www.linkedin.com/in/minion3665/">LinkedIn</a></li>
 			<li><a href="mailto:skyler@clicks.codes">Good ol' email</a></li>
 		</ul>
