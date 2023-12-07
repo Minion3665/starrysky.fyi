@@ -9,3 +9,8 @@
   code in this project should be considered to be under the nearest parent
   license only, for example code that is in a directory licensed under EXPAT is
   not also licensed under AGPL3
+
+## Testing
+
+### Cross-device testing
+This project is tested with [BrowserStack](https://www.browserstack.com/), who sponsor us with [their free for open source subscription](https://www.browserstack.com/open-source)
