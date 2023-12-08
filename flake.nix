@@ -43,7 +43,8 @@
                 svelte-language-server
                 prettier;
             }) ++ (builtins.attrValues {
-              inherit (pkgs);
+              inherit (pkgs)
+                netlify-cli;
               nodejs-18_x = (pkgs.nodejs-18_x.override { enableNpm = true; });
             });
 
