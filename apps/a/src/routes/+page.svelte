@@ -1,5 +1,4 @@
 <script>
-	import { Card, CardContent, CardHeader, CardTitle } from '$components/ui/card';
 	import Prompt from './prompt.svelte';
 	import Result from './result.svelte';
 
@@ -47,42 +46,6 @@
 	<Prompt>unalias whoami</Prompt>
 	<Prompt>nix run github:Minion3665/links</Prompt>
 	<Result>
-		<!--<h2 class="pt-3 pb-2">Explore this website</h2>
-		<div class="mb-5 flex flex-wrap gap-5 md:flex-nowrap">
-			<a
-				class="reset transition-color block grow underline decoration-cyan-300/30 hover:decoration-cyan-400 md:basis-1/2"
-				href="https://blog.starrysky.fyi"
-			>
-				<Card
-					class="h-full shadow-white/50 transition-shadow hover:shadow-md hover:shadow-cyan-400"
-				>
-					<CardHeader>
-						<CardTitle>Read my blog</CardTitle>
-					</CardHeader>
-					<CardContent>
-						<p>I write posts focusing on tech, life and suchlike.</p>
-					</CardContent>
-				</Card>
-			</a>
-			<a
-				class="reset transition-color block grow underline decoration-cyan-300/30 hover:decoration-cyan-400 md:basis-1/2"
-				href="/projects"
-			>
-				<Card
-					class="h-full shadow-white/50 transition-shadow hover:shadow-md hover:shadow-cyan-400"
-				>
-					<CardHeader>
-						<CardTitle>See my projects</CardTitle>
-					</CardHeader>
-					<CardContent>
-						<p>
-							Tiny websites and apps to do specific tasks take your fancy? I sure hope so because
-							that's most of what I make.
-						</p>
-					</CardContent>
-				</Card>
-			</a>
-		</div>-->
 		<h2>Find me on other sites</h2>
 		<ul>
 			<li><a href="https://keyoxide.org/F27E3E5922772E7A">KeyOxide</a></li>
