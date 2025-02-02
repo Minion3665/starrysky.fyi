@@ -16,13 +16,6 @@
 	<Result>
 		<h1 class="dim pb-5">A starry Sky</h1>
 		<p class="dim">
-			Linux a.starrysky.fyi 6.1.31 #1-<a class="dim" href="https://nixos.org">NixOS</a>
-			<a class="dim" href="https://en.wikipedia.org/wiki/Symmetric_multiprocessing">SMP</a>
-			<a class="dim" href="https://wikipedia.org/wiki/Kernel_preemption">PREEMPT_DYNAMIC</a>
-			{pageLoad} x86_64 GNU/Linux<br/>
-			Type "help", "copyright", "credits" or "license" for more information.
-		</p>
-		<p class="dim">
 			Last login: {pageLoad} from 127.0.0.1
 		</p>
 	</Result>
