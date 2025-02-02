@@ -5,11 +5,11 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
+    "eslint": "^9.19.0",
     "eslint-config-default": "workspace:*",
-    "nx": "16.3.1",
-    "nx-cloud": "latest",
-    "prettier": "^2.8.8"
+    "nx": "20.4.0",
+    "nx-cloud": "^19.1.0",
+    "prettier": "^3.4.2"
   },
   "packageManager": "pnpm@7.15.0"
 }

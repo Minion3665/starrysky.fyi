@@ -1,0 +1,12 @@
+[NX Daemon Server] - 2025-02-02T11:49:07.615Z - Started listening on: /tmp/b5a0dc2bf6bb754120d3/d.sock
+[NX Daemon Server] - 2025-02-02T11:49:07.620Z - [WATCHER]: Subscribed to changes within: /home/minion/Code/Personal/StarrySkySites (native)
+[NX Daemon Server] - 2025-02-02T11:49:07.626Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-02T11:49:07.626Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-02-02T11:49:07.629Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-02T11:49:07.630Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2025-02-02T11:49:07.631Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2025-02-02T11:49:07.631Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2025-02-02T11:49:07.632Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-02T11:49:07.632Z - [WATCHER]: Stopping the watcher for /home/minion/Code/Personal/StarrySkySites (sources)
+[NX Daemon Server] - 2025-02-02T11:49:07.633Z - [WATCHER]: Stopping the watcher for /home/minion/Code/Personal/StarrySkySites (outputs)
+[NX Daemon Server] - 2025-02-02T11:49:07.633Z - Server stopped because: "Request to shutdown"

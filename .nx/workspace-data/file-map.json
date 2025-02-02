@@ -1,0 +1,574 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.4.0",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "eslint-config-svelte": [
+        {
+          "file": "packages/eslint-config-svelte/index.js",
+          "hash": "10747710224654737940"
+        },
+        {
+          "file": "packages/eslint-config-svelte/package.json",
+          "hash": "13678712302338821145",
+          "deps": [
+            "npm:eslint-plugin-svelte",
+            "npm:eslint-plugin-tailwindcss"
+          ]
+        }
+      ],
+      "tsconfig": [
+        {
+          "file": "packages/tsconfig/base.json",
+          "hash": "3905756306134346586"
+        },
+        {
+          "file": "packages/tsconfig/package.json",
+          "hash": "18344982449259355242",
+          "deps": [
+            "npm:@tsconfig/strictest"
+          ]
+        }
+      ],
+      "eslint-config-default": [
+        {
+          "file": "packages/eslint-config-default/index.js",
+          "hash": "5212052780368106479"
+        },
+        {
+          "file": "packages/eslint-config-default/package.json",
+          "hash": "17037594530693459763",
+          "deps": [
+            "npm:@nx/eslint-plugin",
+            "npm:eslint-config-next",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-react"
+          ]
+        }
+      ],
+      "void": [
+        {
+          "file": "apps/void/.eslintignore",
+          "hash": "12866345277008372755"
+        },
+        {
+          "file": "apps/void/.eslintrc.cjs",
+          "hash": "691017674087693386"
+        },
+        {
+          "file": "apps/void/.gitignore",
+          "hash": "9309035737946459985"
+        },
+        {
+          "file": "apps/void/.npmrc",
+          "hash": "8268847505735606361"
+        },
+        {
+          "file": "apps/void/.prettierignore",
+          "hash": "12858022801034562273"
+        },
+        {
+          "file": "apps/void/.prettierrc",
+          "hash": "5649980425948680652"
+        },
+        {
+          "file": "apps/void/netlify.toml",
+          "hash": "4667923216105919097"
+        },
+        {
+          "file": "apps/void/package.json",
+          "hash": "11818728402604343833",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@sveltejs/adapter-auto",
+            "npm:@sveltejs/kit",
+            "npm:autoprefixer",
+            "eslint-config-default",
+            "eslint-config-svelte",
+            "npm:postcss",
+            "npm:prettier",
+            "npm:prettier-plugin-svelte",
+            "npm:svelte",
+            "npm:svelte-check",
+            "npm:tailwindcss",
+            "tsconfig",
+            "npm:tslib@2.8.1",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vitest",
+            "npm:@sveltejs/adapter-netlify",
+            "npm:class-variance-authority",
+            "npm:clsx",
+            "components",
+            "npm:lucide-svelte",
+            "npm:radix-svelte",
+            "npm:sass",
+            "npm:seedrandom",
+            "npm:tailwind-merge",
+            "npm:tailwindcss-animate"
+          ]
+        },
+        {
+          "file": "apps/void/playwright.config.ts",
+          "hash": "2563297502597556445"
+        },
+        {
+          "file": "apps/void/pnpm-lock.yaml",
+          "hash": "9845352870328065549"
+        },
+        {
+          "file": "apps/void/postcss.config.cjs",
+          "hash": "14846366293540039322"
+        },
+        {
+          "file": "apps/void/src/app.d.ts",
+          "hash": "16562497431412516793"
+        },
+        {
+          "file": "apps/void/src/app.html",
+          "hash": "3707440646324638764"
+        },
+        {
+          "file": "apps/void/src/app.postcss",
+          "hash": "14983785963130069848"
+        },
+        {
+          "file": "apps/void/src/index.test.ts",
+          "hash": "4899821940437047382"
+        },
+        {
+          "file": "apps/void/src/lib/utils.ts",
+          "hash": "13712397387998452031"
+        },
+        {
+          "file": "apps/void/src/routes/+layout.svelte",
+          "hash": "13393619625137900867"
+        },
+        {
+          "file": "apps/void/src/routes/+page.server.ts",
+          "hash": "1190774687414641969"
+        },
+        {
+          "file": "apps/void/src/routes/+page.svelte",
+          "hash": "2045338390154191739"
+        },
+        {
+          "file": "apps/void/static/favicon.png",
+          "hash": "8899653233334712593"
+        },
+        {
+          "file": "apps/void/svelte.config.js",
+          "hash": "17301127286262443861"
+        },
+        {
+          "file": "apps/void/tailwind.config.cjs",
+          "hash": "7522189566368513529"
+        },
+        {
+          "file": "apps/void/tests/test.ts",
+          "hash": "16596097029166692734"
+        },
+        {
+          "file": "apps/void/tsconfig.json",
+          "hash": "8992328331419048409"
+        },
+        {
+          "file": "apps/void/vite.config.ts",
+          "hash": "6755486746913286723"
+        }
+      ],
+      "a": [
+        {
+          "file": "apps/a/.eslintignore",
+          "hash": "12866345277008372755"
+        },
+        {
+          "file": "apps/a/.eslintrc.cjs",
+          "hash": "691017674087693386"
+        },
+        {
+          "file": "apps/a/.gitignore",
+          "hash": "9309035737946459985"
+        },
+        {
+          "file": "apps/a/.npmrc",
+          "hash": "8268847505735606361"
+        },
+        {
+          "file": "apps/a/.prettierignore",
+          "hash": "12858022801034562273"
+        },
+        {
+          "file": "apps/a/.prettierrc.cjs",
+          "hash": "6645120001409663326"
+        },
+        {
+          "file": "apps/a/netlify.toml",
+          "hash": "6291125230597778471"
+        },
+        {
+          "file": "apps/a/package.json",
+          "hash": "16041497491665860714",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@sveltejs/adapter-auto",
+            "npm:@sveltejs/adapter-netlify",
+            "npm:@sveltejs/kit",
+            "npm:autoprefixer",
+            "eslint-config-default",
+            "eslint-config-svelte",
+            "npm:postcss",
+            "npm:prettier",
+            "npm:prettier-plugin-svelte",
+            "npm:prettier-plugin-tailwindcss",
+            "npm:svelte",
+            "npm:svelte-check",
+            "npm:tailwindcss",
+            "tsconfig",
+            "npm:tslib@2.8.1",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vitest",
+            "npm:class-variance-authority",
+            "npm:clsx",
+            "components",
+            "npm:date-fns",
+            "npm:lucide-svelte",
+            "npm:radix-svelte",
+            "npm:sass",
+            "npm:seedrandom",
+            "npm:tailwind-merge",
+            "npm:tailwindcss-animate"
+          ]
+        },
+        {
+          "file": "apps/a/playwright.config.ts",
+          "hash": "2563297502597556445"
+        },
+        {
+          "file": "apps/a/pnpm-lock.yaml",
+          "hash": "9845352870328065549"
+        },
+        {
+          "file": "apps/a/postcss.config.cjs",
+          "hash": "14846366293540039322"
+        },
+        {
+          "file": "apps/a/src/app.d.ts",
+          "hash": "16562497431412516793"
+        },
+        {
+          "file": "apps/a/src/app.html",
+          "hash": "8832783171314035870"
+        },
+        {
+          "file": "apps/a/src/app.postcss",
+          "hash": "4925883964416706129"
+        },
+        {
+          "file": "apps/a/src/index.test.ts",
+          "hash": "4899821940437047382"
+        },
+        {
+          "file": "apps/a/src/lib/utils.ts",
+          "hash": "13712397387998452031"
+        },
+        {
+          "file": "apps/a/src/routes/+layout.svelte",
+          "hash": "11920012847648320114"
+        },
+        {
+          "file": "apps/a/src/routes/+page.svelte",
+          "hash": "13468457469008506819"
+        },
+        {
+          "file": "apps/a/src/routes/command_responses.svelte",
+          "hash": "13336175177052829207"
+        },
+        {
+          "file": "apps/a/src/routes/prompt.svelte",
+          "hash": "180850279356275791"
+        },
+        {
+          "file": "apps/a/src/routes/result.svelte",
+          "hash": "11741474290309885785"
+        },
+        {
+          "file": "apps/a/src/routes/what/+page.svelte",
+          "hash": "14522513752666152345"
+        },
+        {
+          "file": "apps/a/src/routes/what/project.svelte",
+          "hash": "640447033625289248"
+        },
+        {
+          "file": "apps/a/src/routes/who/+page.svelte",
+          "hash": "2376593498301297716"
+        },
+        {
+          "file": "apps/a/static/favicon.png",
+          "hash": "3098918026727152546"
+        },
+        {
+          "file": "apps/a/svelte.config.js",
+          "hash": "9346684748355528236"
+        },
+        {
+          "file": "apps/a/tailwind.config.cjs",
+          "hash": "7349410848132972326"
+        },
+        {
+          "file": "apps/a/tests/test.ts",
+          "hash": "16596097029166692734"
+        },
+        {
+          "file": "apps/a/tsconfig.json",
+          "hash": "8992328331419048409"
+        },
+        {
+          "file": "apps/a/vite.config.ts",
+          "hash": "6755486746913286723"
+        }
+      ],
+      "components": [
+        {
+          "file": "packages/components/.eslintignore",
+          "hash": "12866345277008372755"
+        },
+        {
+          "file": "packages/components/.eslintrc.cjs",
+          "hash": "691017674087693386"
+        },
+        {
+          "file": "packages/components/.gitignore",
+          "hash": "1736406243314219225"
+        },
+        {
+          "file": "packages/components/.npmrc",
+          "hash": "8268847505735606361"
+        },
+        {
+          "file": "packages/components/.prettierignore",
+          "hash": "12866345277008372755"
+        },
+        {
+          "file": "packages/components/.prettierrc",
+          "hash": "5649980425948680652"
+        },
+        {
+          "file": "packages/components/LICENSE",
+          "hash": "3076310257398868313"
+        },
+        {
+          "file": "packages/components/README.md",
+          "hash": "9866897418960845569"
+        },
+        {
+          "file": "packages/components/package.json",
+          "hash": "15116510232488467968",
+          "deps": [
+            "npm:svelte",
+            "npm:@playwright/test",
+            "npm:@sveltejs/adapter-auto",
+            "npm:@sveltejs/kit",
+            "npm:@sveltejs/package",
+            "npm:@types/seedrandom",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:autoprefixer",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-svelte",
+            "npm:postcss",
+            "npm:prettier",
+            "npm:prettier-plugin-svelte",
+            "npm:publint",
+            "npm:svelte-check",
+            "npm:svelte-preprocess",
+            "npm:tailwindcss",
+            "npm:tslib@2.8.1",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vitest",
+            "npm:class-variance-authority",
+            "npm:clsx",
+            "npm:lucide-svelte",
+            "npm:seedrandom",
+            "npm:tailwind-merge",
+            "npm:tailwindcss-animate"
+          ]
+        },
+        {
+          "file": "packages/components/playwright.config.ts",
+          "hash": "2563297502597556445"
+        },
+        {
+          "file": "packages/components/postcss.config.cjs",
+          "hash": "14846366293540039322"
+        },
+        {
+          "file": "packages/components/src/app.d.ts",
+          "hash": "16562497431412516793"
+        },
+        {
+          "file": "packages/components/src/app.html",
+          "hash": "10708172562380047416"
+        },
+        {
+          "file": "packages/components/src/app.postcss",
+          "hash": "11740572857390950422"
+        },
+        {
+          "file": "packages/components/src/index.test.ts",
+          "hash": "4899821940437047382"
+        },
+        {
+          "file": "packages/components/src/lib/decoration/BackgroundStars/BackgroundStars.svelte",
+          "hash": "6154920709027194496"
+        },
+        {
+          "file": "packages/components/src/lib/decoration/BackgroundStars/index.ts",
+          "hash": "13446240269226229461"
+        },
+        {
+          "file": "packages/components/src/lib/index.js",
+          "hash": "3854350307779320233"
+        },
+        {
+          "file": "packages/components/src/lib/ui/button/Button.svelte",
+          "hash": "8597819156507114270"
+        },
+        {
+          "file": "packages/components/src/lib/ui/button/index.ts",
+          "hash": "15146752425998875447"
+        },
+        {
+          "file": "packages/components/src/lib/ui/card/Card.svelte",
+          "hash": "13667557214891464951"
+        },
+        {
+          "file": "packages/components/src/lib/ui/card/CardContent.svelte",
+          "hash": "17981905440842556378"
+        },
+        {
+          "file": "packages/components/src/lib/ui/card/CardDescription.svelte",
+          "hash": "17571418823342815875"
+        },
+        {
+          "file": "packages/components/src/lib/ui/card/CardFooter.svelte",
+          "hash": "11988916540130105994"
+        },
+        {
+          "file": "packages/components/src/lib/ui/card/CardHeader.svelte",
+          "hash": "1905116615894078382"
+        },
+        {
+          "file": "packages/components/src/lib/ui/card/CardTitle.svelte",
+          "hash": "15286568043174199652"
+        },
+        {
+          "file": "packages/components/src/lib/ui/card/index.ts",
+          "hash": "2457790855001831879"
+        },
+        {
+          "file": "packages/components/src/lib/ui/input/Input.svelte",
+          "hash": "2453229934777939932"
+        },
+        {
+          "file": "packages/components/src/lib/ui/input/index.ts",
+          "hash": "12883276487363251487"
+        },
+        {
+          "file": "packages/components/src/lib/utils.ts",
+          "hash": "13712397387998452031"
+        },
+        {
+          "file": "packages/components/src/routes/+layout.svelte",
+          "hash": "15197232107872837780"
+        },
+        {
+          "file": "packages/components/src/routes/+page.svelte",
+          "hash": "2521577195872908923"
+        },
+        {
+          "file": "packages/components/static/favicon.png",
+          "hash": "11504680974745960892"
+        },
+        {
+          "file": "packages/components/svelte.config.js",
+          "hash": "5029773590301925782"
+        },
+        {
+          "file": "packages/components/tailwind.config.cjs",
+          "hash": "13937527349063801250"
+        },
+        {
+          "file": "packages/components/tests/test.ts",
+          "hash": "16596097029166692734"
+        },
+        {
+          "file": "packages/components/tsconfig.json",
+          "hash": "5936216318286914443"
+        },
+        {
+          "file": "packages/components/vite.config.ts",
+          "hash": "6755486746913286723"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".envrc",
+        "hash": "5578937419407682905"
+      },
+      {
+        "file": ".eslintrc.js",
+        "hash": "618507006289689335"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "5392204318678396802"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "3403154931541090305"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "8887697596486601035"
+      },
+      {
+        "file": "README.md",
+        "hash": "1385183434904088532"
+      },
+      {
+        "file": "flake.lock",
+        "hash": "7922725318482720297"
+      },
+      {
+        "file": "flake.nix",
+        "hash": "15407670943912274910"
+      },
+      {
+        "file": "garnix.yaml",
+        "hash": "5794808131730849664"
+      },
+      {
+        "file": "nx.json",
+        "hash": "7059875958446330582"
+      },
+      {
+        "file": "package.json",
+        "hash": "14250168120159049868"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "7026515637526358109"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "9750177317466281158"
+      }
+    ]
+  }
+}
